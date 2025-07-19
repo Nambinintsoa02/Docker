@@ -1,6 +1,6 @@
-#Docker commande
+Docker commande
 
-##1. Pour vérifie que Docker est installé et tourne:
+1. Pour vérifie que Docker est installé et tourne:
 ```
 docker --version
 ```
