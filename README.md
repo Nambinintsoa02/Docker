@@ -40,7 +40,13 @@ docker run -d -p 9000:9000 \
   -v portainer_data:/data \
   portainer/portainer-ce
 ```
- pour accéder à Portainer
+-Lancer une image
+```
+docker run -d -p 9000:9000 \
+
+```
+ pour accéder à L'image
  ```
  http://localhost:9000
 ```
+
