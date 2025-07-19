@@ -13,3 +13,11 @@ sudo systemctl status docker
 sudo systemctl start docker
 
 ```
+-Voir les conteneurs en cours d’exécution
+```
+docker ps
+```
+-. Voir les images Docker
+```
+docker images
+```
