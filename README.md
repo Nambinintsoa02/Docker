@@ -1,45 +1,45 @@
 Docker commande de base
 
--installer docker
+. Installer docker
 ```
 apt update
 apt install docker.io
 ```
-- Pour vérifie que Docker est installé et tourne:
+. Pour vérifie que Docker est installé et tourne:
 ```
 docker --version
 ```
--Et pour vérifier si Docker tourne :
+. Et pour vérifier si Docker tourne :
 ```
 sudo systemctl status docker
 ```
--Pour le demarer
+. Pour le demarer
 ```
 sudo systemctl start docker
 
 ```
--Voir les conteneurs en cours d’exécution
+. Voir les conteneurs en cours d’exécution
 ```
 docker ps
 ```
-Arreter un conteneur en cours
+. Arreter un conteneur en cours
 ```
 docker stop IDconteneur
 ```
--Voir tous les conteneurs (même arrêtés)
+. Voir tous les conteneurs (même arrêtés)
 ```
 docker ps -a
 
 ```
-- Voir les images Docker
+. Voir les images Docker
 ```
 docker images
 ```
-Supprimer une images
+. Supprimer une images
 ```
 doker rmi NomImage
 ```
--Supprimer le conteneur actuel
+. Supprimer le conteneur actuel
 ```
 sudo docker rm -f NomConteneur
 ```
@@ -53,12 +53,12 @@ docker run -d -p 9000:9000 \
   -v portainer_data:/data \
   portainer/portainer-ce
 ```
--Lancer une image
+. Lancer une image
 ```
 docker run -d -p 9000:9000 nomImage
 
 ```
- pour accéder à L'image
+ . Pour accéder à L'image
  ```
  http://localhost:9000
 ```
