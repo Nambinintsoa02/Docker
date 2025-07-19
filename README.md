@@ -1,4 +1,4 @@
-Docker commande
+Docker commande de base
 
 1. Pour vérifie que Docker est installé et tourne:
 ```
