@@ -17,7 +17,7 @@ sudo systemctl start docker
 ```
 docker ps
 ```
--. Voir les images Docker
+- Voir les images Docker
 ```
 docker images
 ```
