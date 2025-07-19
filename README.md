@@ -17,6 +17,10 @@ sudo systemctl start docker
 ```
 docker ps
 ```
+Arreter un conteneur en cours
+```
+docker stop IDconteneur
+```
 -Voir tous les conteneurs (même arrêtés)
 ```
 docker ps -a
@@ -25,6 +29,10 @@ docker ps -a
 - Voir les images Docker
 ```
 docker images
+```
+Supprimer une images
+```
+doker rmi NomImage
 ```
 -Supprimer le conteneur actuel
 ```
@@ -49,4 +57,6 @@ docker run -d -p 9000:9000 nomImage
  ```
  http://localhost:9000
 ```
+
+
 
