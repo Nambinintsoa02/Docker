@@ -17,9 +17,18 @@ sudo systemctl start docker
 ```
 docker ps
 ```
+-Voir tous les conteneurs (même arrêtés)
+```
+docker ps -a
+
+```
 - Voir les images Docker
 ```
 docker images
+```
+-Supprimer le conteneur actuel
+```
+sudo docker rm -f NomConteneur
 ```
 -interface graphique pour gérer Docker :
 ```
