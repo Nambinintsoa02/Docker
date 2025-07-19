@@ -42,7 +42,7 @@ docker run -d -p 9000:9000 \
 ```
 -Lancer une image
 ```
-docker run -d -p 9000:9000 \
+docker run -d -p 9000:9000 nomImage
 
 ```
  pour accéder à L'image
