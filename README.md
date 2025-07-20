@@ -11,12 +11,17 @@ docker --version
 ```
 . Et pour vérifier si Docker tourne :
 ```
-sudo systemctl status docker
+systemctl status docker
 ```
 . Pour le demarer
 ```
-sudo systemctl start docker
+systemctl start docker
+#ou
+docker start nom_du_conteneur
 
+```
+```
+docker restart nom_conteneur
 ```
 . Voir les conteneurs en cours d’exécution
 ```
