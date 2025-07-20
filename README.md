@@ -44,6 +44,11 @@ docker images
 ```
 doker rmi NomImage
 ```
+Rebuild une image apres modification :
+```
+docker build -t monimage:latest .
+```
+
 . Supprimer le conteneur actuel
 ```
 sudo docker rm -f NomConteneur
