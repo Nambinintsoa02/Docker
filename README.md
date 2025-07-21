@@ -44,6 +44,10 @@ docker images
 ```
 doker rmi NomImage
 ```
+Creer une image:
+```
+docker build -t nomimage .
+```
 Rebuild une image apres modification :
 ```
 docker build -t monimage:latest .
