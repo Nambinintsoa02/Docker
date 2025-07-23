@@ -69,7 +69,7 @@ docker run -d -p 9000:9000 \
 ```
 . Lancer une image
 ```
-docker run -d -p 9000:9000 nomImage
+docker run -p 9000:9000 nomImage
 
 ```
  . Pour accéder à L'image
