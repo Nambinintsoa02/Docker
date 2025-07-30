@@ -4,6 +4,9 @@ Docker commande de base
 ```
 apt update
 apt install docker.io
+systemctl start docker
+systemctl enable docker
+
 ```
 . Pour vérifie que Docker est installé et tourne:
 ```
