@@ -78,3 +78,25 @@ networks:  #  tag networks
 volumes:  # Définition des volumes nommés (facultatif ici)
   app_data:
 ```
+#Docker file
+```
+FROM : Image de base
+FROM python:3.11-slim
+
+RUN : Exécuter des commandes lors de la construction
+RUN apt-get update && \
+    apt-get install -y curl && \
+    pip install flask
+
+COPY : Copier les fichiers locaux vers l'image
+COPY app.py /app/app.py
+
+# Définir le répertoire de travail
+WORKDIR /app
+
+ENTRYPOINT : Commande principale qui sera toujours exécutée
+ENTRYPOINT ["python"]
+
+CMD : Définit la commande par défaut à exécuter lorsque le conteneur démarre.
+CMD ["app.py"]
+```
