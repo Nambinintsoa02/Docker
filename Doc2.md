@@ -11,12 +11,24 @@ Crée une nouvelle image avec un message de description.
 ```
 docker commit -m "message"
 ```
-#Utilisation tag
+#Utilisation doker tag
 
 .Télécharger une image Docker avec le tag spécifié.
 ```
 docker pull nom_image:tag
 docker pull ubuntu:22.04
+```
+Associe un tag à une image Docker existante
+```
+docker tag
+```
+Crée une image Docker avec un tag spécifique à partir du Dockerfile dans le répertoire
+```
+docker build -t nom_image .
+```
+Crée une image Docker à partir d’un Dockerfile.
+```
+ docker build 
 ```
 .fichier compose.yml
 ```
@@ -156,4 +168,15 @@ docker node
 Lister tous les nœuds dans un cluster Docker Swarm.
 ```
 docker node ls
+```
+#DOCKER EXEC(dans un conteneur en cours d'execution)
+
+
+Exécute une commande dans un conteneur en cours d'exécution.
+```
+docker exec
+```
+Ouvre un terminal interactif dans un conteneur en cours d'exécution.
+```
+docker exec -it
 ```
