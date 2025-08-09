@@ -14,7 +14,8 @@ docker compose down
 docker pull nom_images
 ```
 
-#Utilisatio tag
+#Utilisation tag
+
 .Télécharger une image Docker avec le tag spécifié.
 ```
 docker pull nom_image:tag
