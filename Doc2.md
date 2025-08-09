@@ -4,6 +4,7 @@
 docker pull nom_images
 ```
 
+
 #Utilisation tag
 
 .Télécharger une image Docker avec le tag spécifié.
@@ -68,6 +69,8 @@ networks:  #  tag networks
 volumes:  # Définition des volumes nommés (facultatif ici)
   app_data:
 ```
+
+
 #Docker file
 ```
 FROM : Image de base
@@ -91,6 +94,7 @@ CMD : Définit la commande par défaut à exécuter lorsque le conteneur démarr
 CMD ["app.py"]
 ```
 
+
 #Utilisation de docker stack
 
 Déployer une pile de services dans une cluster docker swarm
@@ -101,6 +105,8 @@ Supprimer une pile de services dans docker swarn
 ```
 docker stack rm
 ```
+
+
 #Utilisation de docker compose
 
 .Affiche le service
