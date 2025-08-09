@@ -23,14 +23,28 @@ docker pull ubuntu:22.04
 ```
 .fichier compose.yml
 ```
-tag service: #Définit les conteneurs et leurs configurations 
+tag service: #Définit les conteneurs et leurs configurations
+```
+```
   tag image #Déclare l'image Docker pour créer un conteneur
-  tag nom_conteneur #définir le nom du conteneur 
+```
+```
+  tag nom_conteneur #définir le nom du conteneur
+```
+```
   tag networks #Permet de spécifier les réseaux à utiliser pour le conteneur
+```
+```
 
   tag build #Indique le chemin du Dockerfile pour l'image Docker.
-  tag volumes #Définit les volumes partagés entre les conteneurs 
+```
+```
+  tag volumes #Définit les volumes partagés entre les conteneurs
+```
+```
   tag ports #Lier les ports du conteneur aux ports de l'hôte
+```
+```
   tag version #Définit la version du fichier Docker Compose
 ```
 .Escemple:
