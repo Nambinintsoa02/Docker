@@ -1,14 +1,4 @@
-.Affiche le service
-```
-docker compose ls
-```
-```
-docker compose up -d
-```
-.Arreter tous les conteneur
-```
-docker compose down
-```
+
 .Telecharge une images depuis un registre (par defaut :docker hub) latest version
 ```
 docker pull nom_images
@@ -99,4 +89,28 @@ ENTRYPOINT ["python"]
 
 CMD : Définit la commande par défaut à exécuter lorsque le conteneur démarre.
 CMD ["app.py"]
+```
+
+#Utilisation de docker stack
+
+Déployer une pile de services dans une cluster docker swarm
+```
+docker stack deploy
+```
+Supprimer une pile de services dans docker swarn
+```
+docker stack rm
+```
+#Utilisation de docker compose
+
+.Affiche le service
+```
+docker compose ls
+```
+```
+docker compose up -d
+```
+.Arreter tous les conteneur
+```
+docker compose down
 ```
