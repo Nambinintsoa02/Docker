@@ -33,3 +33,34 @@ tag service: #Définit les conteneurs et leurs configurations
   tag ports #Lier les ports du conteneur aux ports de l'hôte
   tag version #Définit la version du fichier Docker Compose
 ```
+.Escemple:
+```
+version: '3.8'  #tag version
+
+services: #tag services
+  web:
+    image: nginx:1.25  tag image
+    container_name: mon_nginx  # tag conteneur_name
+    ports:  #  tag ports
+      - "8080:80"
+    volumes:  #tag  Volume
+      - ./site:/usr/share/nginx/html
+    networks:  #  tag networks
+      - mon_reseau
+
+  app:
+    build: ./app  : #tag build
+    container_name: mon_app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app_data:/data
+    networks:
+      - mon_reseau
+
+networks:  #  tag networks
+  mon_reseau:
+
+volumes:  # Définition des volumes nommés (facultatif ici)
+  app_data:
+```
