@@ -3,8 +3,14 @@
 ```
 docker pull nom_images
 ```
-
-
+.Crée une nouvelle image à partir d’un conteneur en cours d'exécution.
+```
+docker commit
+```
+Crée une nouvelle image avec un message de description.
+```
+docker commit -m "message"
+```
 #Utilisation tag
 
 .Télécharger une image Docker avec le tag spécifié.
@@ -70,28 +76,17 @@ volumes:  # Définition des volumes nommés (facultatif ici)
   app_data:
 ```
 
-#Utilisation de docker stack
-
-Déployer une pile de services dans une cluster docker swarm
-```
-docker stack deploy
-```
-Supprimer une pile de services dans docker swarn
-```
-docker stack rm
-```
-
-
 #Utilisation de docker compose
 
 .Affiche le service
 ```
 docker compose ls
 ```
+Lance les services définis dans un fichier docker-compose.yml.
 ```
 docker compose up -d
 ```
-.Arreter tous les conteneur
+.Arreter et supprimer tous les conteneur 
 ```
 docker compose down
 ```
@@ -116,4 +111,49 @@ ENTRYPOINT ["python"]
 
 CMD : Définit la commande par défaut à exécuter lorsque le conteneur démarre.
 CMD ["app.py"]
+```
+
+#Utilisation de docker swarm (cluster),stack(pile de services dans swarm),node (noeud dans swarm)
+```
+
+Swarm = #le cluster complet,
+
+Node = #une machine membre du cluster,
+
+Stack = #un ensemble de services déployés dans ce cluster.
+```
+
+Déployer une pile de services dans une cluster docker swarm
+```
+docker stack deploy
+```
+Supprimer une pile de services dans docker swarn
+```
+docker stack rm
+```
+
+
+Initialise un mode Swarm sur le système actuel
+```
+docker swarn init
+```
+.Ajoute un nœud au cluster Docker Swarm existant.
+```
+docker swarn join
+```
+.Retire le nœud du cluster Docker Swarm, le transformant en un nœud non-Swarm.
+```
+docker swarm leave
+```
+.Retire un nœud du cluster Docker Swarm même s’il est actuellement manager.
+```
+docker swarm leave --force
+```
+Gerer les noeud dans un cluster docker swarm
+```
+docker node 
+```
+Lister tous les nœuds dans un cluster Docker Swarm.
+```
+docker node ls
 ```
